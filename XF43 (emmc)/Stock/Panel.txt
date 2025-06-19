@@ -1,0 +1,59 @@
+
+	panel {
+		compatible = "simple-panel";
+		backlight = <0x71>;
+		power-supply = <0x72>;
+		enable-gpios = <0x40 0x01 0x01>;
+		enable-delay-ms = <0x78>;
+		disable-delay-ms = <0x14>;
+		unprepare-delay-ms = <0x14>;
+		bus-format = <0x1009>;
+		width-mm = <0x99>;
+		height-mm = <0x55>;
+
+		display-timings {
+			native-mode = <0x73>;
+
+			timing0 {
+				clock-frequency = <0xb71b00>;
+				hactive = <0x1e0>;
+				vactive = <0x110>;
+				hback-porch = <0x53>;
+				hfront-porch = <0x30>;
+				vback-porch = <0x16>;
+				vfront-porch = <0x12>;
+				hsync-len = <0x2c>;
+				vsync-len = <0x0e>;
+				hsync-active = <0x00>;
+				vsync-active = <0x00>;
+				de-active = <0x00>;
+				pixelclk-active = <0x01>;
+				phandle = <0x73>;
+			};
+
+			timing1 {
+				clock-frequency = <0x1e84800>;
+				hactive = <0x320>;
+				vactive = <0x1e0>;
+				hback-porch = <0x53>;
+				hfront-porch = <0x30>;
+				vback-porch = <0x16>;
+				vfront-porch = <0x12>;
+				hsync-len = <0x2c>;
+				vsync-len = <0x0e>;
+				hsync-active = <0x00>;
+				vsync-active = <0x00>;
+				de-active = <0x00>;
+				pixelclk-active = <0x01>;
+				phandle = <0xcf>;
+			};
+		};
+
+		port {
+
+			endpoint {
+				remote-endpoint = <0x74>;
+				phandle = <0x3e>;
+			};
+		};
+	};

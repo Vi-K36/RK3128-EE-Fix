@@ -1,0 +1,3 @@
+replaced clock-frequency = <0x0b71b00>; (11.9 MHz)
+
+with clock-frequency = <0x0c3dbe8>; (hex for 12,813,000)
